@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asyncawait</title>
+</head>
+<body>
+    <h2></h2>
+    <script>
+        const students=[
+            {name:"Isha Khanal",age:21},
+            {name:"manish ter",age:22},
+            {name:"saksham karki",age:26}
+        ]
+
+        const showStudent=()=>{
+            setTimeout(()=>{
+                let result=""
+                students.forEach(info=>{
+                    result+=`<ul>
+                            <li>${info.name}</li>
+                            <li>${info.name} is ${info.age} years old</li>
+
+                        </ul>`
+
+                })
+                document.querySelector('h2').innerHTML=result
+
+            },2000)
+
+        }
+
+        //defining the function
+        const addStudent=newdata=>{
+            return new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    students.push(newdata)
+                    const error=false
+                    if(!error){
+                        resolve()
+                    }
+                    else{
+                        reject("something went wrong")
+                    }
+
+                },3000)
+            })
+        }
+
+        // //call the function addStudent()
+        // addStudent({name:"Suhana Kafle",age:21})
+        
+
+        const demoFunction=async()=>{
+            await addStudent({name:"Suhana Kafle", age:21})
+            showStudent()
+
+        }
+
+        //call demofunction
+        demoFunction()
+    </script>
+</body>
+</html>

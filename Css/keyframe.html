@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: burlywood;
+        }
+        .container{
+            width: 400px;
+            height: 400px;
+            margin: 30px auto;
+            /* animation-name: up-down;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-delay: 2s; 
+            fill-mode: backwards;*/
+            animation: up-down 5s ease-in-out 2s infinite alternate-reverse ;
+        }
+        @keyframes up-down{
+            0%{
+                transform: translateY(-30px);
+            
+            }
+            25%{
+                transform: translateX(30px);
+            }
+            50%{
+                transform: translateY(30px);
+            }
+            75%{
+                transform: translateX(-30px);
+            }
+
+            100%{
+                transform: translateY(-30px);
+            }
+                
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+   <img src="https://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bd17.png" alt="">
+   </div>
+    
+</body>
+</html>

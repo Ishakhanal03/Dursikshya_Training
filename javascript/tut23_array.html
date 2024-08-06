@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        //collection
+        const fruits=["Mango","Orange","Apple","Kiwi","Banana","straberry"]
+        document.write(`${fruits}<br>`)
+
+        //indexing
+        document.write(`${fruits[0]}<br>`)
+        document.write(`${fruits[2]}<br>`)
+        document.write(`${fruits[4]}<br>`)
+        document.write(`${fruits[0][0]}<br>`)
+
+
+        //length()
+        document.write(`${fruits.length}<br>`)
+
+        //pop()---> remove last element
+        fruits.pop()
+        document.write(`${fruits}<br>`)
+
+        //push()
+        fruits.push("dragonfruit")
+        document.write(`${fruits}<br>`)
+
+        //.shift()
+        fruits.shift()
+        document.write(`${fruits}<br>`)
+
+        //unshift()
+        fruits.unshift("berry")
+        document.write(`${fruits}<br>`)
+
+        //splice()
+        fruits.splice(2,0,"Watermelon","Guava")
+        document.write(`${fruits}<br>`)
+
+        //2--> index from where the element is add or remove 
+        //0-> number or element to be removed
+
+        fruits.splice(2,2,"abc")
+        document.write(`${fruits}<br>`)
+
+        //sort()--> accending order
+        fruits.sort()
+        document.write(`${fruits}<br>`)
+
+
+        //reverse()
+        fruits.reverse()
+        document.write(`${fruits}<br>`)
+
+
+
+
+
+
+    </script>
+</body>
+</html>

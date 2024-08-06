@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For in For of Lopp</title>
+</head>
+<body>
+    <script>
+        //for in loop work through the iterable objects
+        const students={
+            fname:"Hari",
+            lname:"Karki",
+            age:26,
+            height:6.1
+        }
+        for(let i in students){
+            document.write(`${students[i]} &nbsp`)
+        }
+
+        //for of works on the iterable elements of array
+        const fruits=["mango","orange","Apple","Kiwi"]
+        for(let name of fruits){
+            document.write(`${name}<br>`)
+
+        }
+    </script>
+</body>
+</html>

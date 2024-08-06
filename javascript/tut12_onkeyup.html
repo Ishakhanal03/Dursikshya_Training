@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onkeyup</title>
+</head>
+<body>
+      <!-- day 4 of javascript -->
+
+    <input type="password" name="pwd" id="pwd">
+    <h2 id="title"></h2>
+
+
+    <input type="text" name="user" id="user">
+    <h2 id="test"></h2>
+
+    <button name="button" id="button">click me</button>
+    <h3 id="button"></h3>
+  
+
+    <script>
+        const pwdInput=document.getElementById("pwd")
+        const userInput=document.getElementById("user")
+        const buttonInput=document.getElementById("button")
+
+        // const demoFunction=()=>{
+        //     document.querySelector("#title").innerHTML=pwdInput.value
+        // }
+        // pwdInput.addEventListener("keyup",demoFunction)
+
+        // pwdInput.addEventListener("keyup",function(){
+        //     document.querySelector("#title").innerHTML=pwdInput.value
+        // })
+        pwdInput.addEventListener("keyup",()=>{
+            document.querySelector("#title").innerHTML=pwdInput.value
+        })
+
+        userInput.addEventListener("keydown",()=>{
+            document.querySelector("#test").innerHTML=userInput.value
+        })
+
+        buttonInput.addEventListener("dblclick",()=>{
+            document.querySelector("#button").innerHTML=new Date()
+        })
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <script>
+        const text="This is a javascript class and javascript is client sdide scripting language"
+        document.write(`${text}<br>`)
+        document.write(`${text[3]}<br>`)
+
+
+        //to count the lenght of the string --->.length()
+        document.write(`${text.length}<br>`)
+
+
+        //to find the index of particular string ----> .indexof()
+        document.write(`${text.indexOf("javascript")}<br>`)
+
+        //search()
+        document.write(`${text.search("javascript")}<br>`)
+
+        //lastindex()
+        document.write(`${text.lastIndexOf("javascript")}<br>`)
+
+
+        //replace()
+        document.write(`${text.replace("javascript","js")}<br>`)
+
+        //replaceAll()
+        document.write(`${text.replaceAll("javascript","js")}<br>`)
+
+        //toUpperCase()
+        document.write(`${text.toUpperCase()}<br>`)
+
+        //toLowerCase()
+        document.write(`${text.toLowerCase()}<br>`)
+
+        //splict()
+        document.write(`${text.split(' ')}<br>`)
+        
+        //includes --- return true if the particular string/character is present Otherwise False
+        document.write(`${text.includes("javascript")}<br>`)
+
+        //slice()-->slice(start,end)
+        // substring()--. substring(start,end)
+        //substr()--> substr(start,length)
+
+        document.write(`${text.slice(5,30)}........<br>`)
+        document.write(`${text.substring(5,30)}........<br>`)
+        document.write(`${text.substr(5,30)}........<br>`)
+
+
+    </script>
+</body>
+</html>

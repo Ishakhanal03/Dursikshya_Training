@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav bar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        nav{
+            background-color: cornflowerblue;
+            position: sticky;
+
+        }
+        nav ul{
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            justify-content: center;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            display: inline-block;
+            padding: 10px;
+
+
+        }
+
+        nav ul li a:hover{
+            background-color: aqua;
+            color: orange;
+
+        }
+        nav ul li .active{
+            /* background-color: aqua; */
+            color: orange;
+        }
+
+        li .dropdown{
+            width: 120px;
+            background-color: #1AAD2F;
+            display: none;
+            position:absolute;
+
+        }
+        nav ul li:hover .dropdown{
+            display: block;
+        }
+       .dropdown li a{
+        display: block;
+       }
+
+       .dropdown li .sub-dropdown{
+        position: absolute;
+        left: 100%;
+        top: 0;
+        background-color: blue;
+        display: none;
+       }
+       .dropdown li:hover .sub-dropdown{
+        display: block;
+       }
+        
+    </style>
+</head>
+<body>
+   
+
+   <nav>
+    <ul>
+        <li><a href="" class="active">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Category</a>
+            <ul class="dropdown">
+                <li><a href="">Mobile</a>
+                   <ul class="sub-dropdown">
+                    <li><a href="">iphone</a></li>
+                    <li><a href="">samsung</a></li>
+                    <li><a href="">xaomi</a></li>
+                   </ul>
+                </li>
+                <li><a href="">Laptop</a></li>
+                <li><a href="">Earphone</a></li>
+                <li><a href="">Tablet</a></li>
+           </ul>
+        </li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Tablet</a></li>
+    </ul>
+   </nav>
+
+   <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis magnam, quas mollitia quidem sunt ullam sapiente est, dolore totam aperiam fugiat laboriosam amet aspernatur, neque architecto. Possimus et sunt velit?
+    Dignissimos perferendis nihil placeat laboriosam a iure officia optio veniam, rem, obcaecati error, deserunt ullam numquam commodi maiores assumenda labore corrupti? Eos adipisci eum velit, similique inventore quos ad nulla!
+   </p>
+</body>
+
+</html>

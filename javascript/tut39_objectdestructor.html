@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Destructor</title>
+</head>
+<body>
+    <script>
+        const student={
+            name:'Manish Ter',
+            age: 22,
+            address: 'ktm'
+        }
+
+        const showStudent=({name,age,address})=>{
+            return `The name of the student is ${name}.he is ${age}years old.He lives in ${address}`
+
+        }
+
+
+        const show = showStudent(student)
+        document.write(`${show}<br>`)
+
+
+        const{name,age,address}=student
+        document.write(`${name}<br>`)
+        document.write(`${age}<br>`)
+        document.write(`${address}<br>`)
+
+        //const name = student.name
+        
+    </script>
+</body>
+</html>

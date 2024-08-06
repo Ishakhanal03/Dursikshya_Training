@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postiton</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 300px;
+            height: 200px;
+            background-color: rgb(34, 43, 78);
+            position: relative;
+            /* top: 30px; */
+            bottom: 30px;
+            left:20%;
+            z-index: 1;
+        }
+
+        .box{
+            width: 300px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            top: 30px;
+            left: 30%;
+            z-index: 3;
+        }
+        .box1{
+            width: 300px;
+            height: 200px;
+            background-color: green;
+            position: absolute;
+            top: 50px;
+            left: 1%;
+            z-index: 2;
+        }
+        .inquriy{
+            background-color: aqua;
+            width: 150px;
+            position: fixed;
+            text-align: center;
+            bottom: 25%;
+            right: 20%;
+
+        }
+        .nav{
+            width: auto;
+            height: 50px;
+            background-color: blue;
+            font-size: 20px;
+            text-align: center;
+            position: sticky;
+            top: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- relative Position  -->
+    <div class="container">1</div>
+
+    <!-- absolute Position -->
+    <div class="box">2</div>
+
+    <div class="box1">3</div>
+
+    <!-- sticky -->
+    <!-- <div class="nav">
+        This Is Nav Bar
+    </div> -->
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum tenetur fugiat! Qui rerum delectus laborum distinctio eveniet quasi. Veniam nobis nihil aut cupiditate, perferendis fuga sunt quidem suscipit ipsum?
+    Ex aspernatur quos quaerat nesciunt officia facere voluptas vero animi rem neque eveniet reprehenderit fugit, beatae labore perferendis, possimus ipsum aliquid ipsam cumque dolore est distinctio odit. Quam, sunt corrupti?
+    Doloribus id eveniet cumque qui odio sed molestiae obcaecati unde nihil. Saepe, rerum! Eius expedita cum nostrum suscipit officia sequi quasi dolorem animi ratione! Blanditiis cum eligendi quo accusamus alias.
+    Reiciendis culpa, quasi fugiat quod inventore vel est nam, suscipit cupiditate adipisci aliquam nesciunt quis distinctio ducimus at, sapiente nulla? Magnam dignissimos pariatur atque temporibus vel, consequatur molestias eum est.
+    Blanditiis error quisquam voluptatibus iste, asperiores nostrum doloribus eius ex iure in cupiditate exercitationem consequatur dicta molestiae doloremque voluptate voluptatum sed saepe, cumque labore. Ducimus iure minus temporibus quam doloremque?</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum tenetur fugiat! Qui rerum delectus laborum distinctio eveniet quasi. Veniam nobis nihil aut cupiditate, perferendis fuga sunt quidem suscipit ipsum?
+        Ex aspernatur quos quaerat nesciunt officia facere voluptas vero animi rem neque eveniet reprehenderit fugit, beatae labore perferendis, possimus ipsum aliquid ipsam cumque dolore est distinctio odit. Quam, sunt corrupti?
+        Doloribus id eveniet cumque qui odio sed molestiae obcaecati unde nihil. Saepe, rerum! Eius expedita cum nostrum suscipit officia sequi quasi dolorem animi ratione! Blanditiis cum eligendi quo accusamus alias.
+        Reiciendis culpa, quasi fugiat quod inventore vel est nam, suscipit cupiditate adipisci aliquam nesciunt quis distinctio ducimus at, sapiente nulla? Magnam dignissimos pariatur atque temporibus vel, consequatur molestias eum est.
+        Blanditiis error quisquam voluptatibus iste, asperiores nostrum doloribus eius ex iure in cupiditate exercitationem consequatur dicta molestiae doloremque voluptate voluptatum sed saepe, cumque labore. Ducimus iure minus temporibus quam doloremque?</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum tenetur fugiat! Qui rerum delectus laborum distinctio eveniet quasi. Veniam nobis nihil aut cupiditate, perferendis fuga sunt quidem suscipit ipsum?
+            Ex aspernatur quos quaerat nesciunt officia facere voluptas vero animi rem neque eveniet reprehenderit fugit, beatae labore perferendis, possimus ipsum aliquid ipsam cumque dolore est distinctio odit. Quam, sunt corrupti?
+            Doloribus id eveniet cumque qui odio sed molestiae obcaecati unde nihil. Saepe, rerum! Eius expedita cum nostrum suscipit officia sequi quasi dolorem animi ratione! Blanditiis cum eligendi quo accusamus alias.
+            Reiciendis culpa, quasi fugiat quod inventore vel est nam, suscipit cupiditate adipisci aliquam nesciunt quis distinctio ducimus at, sapiente nulla? Magnam dignissimos pariatur atque temporibus vel, consequatur molestias eum est.
+            Blanditiis error quisquam voluptatibus iste, asperiores nostrum doloribus eius ex iure in cupiditate exercitationem consequatur dicta molestiae doloremque voluptate voluptatum sed saepe, cumque labore. Ducimus iure minus temporibus quam doloremque?</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum tenetur fugiat! Qui rerum delectus laborum distinctio eveniet quasi. Veniam nobis nihil aut cupiditate, perferendis fuga sunt quidem suscipit ipsum?
+                Ex aspernatur quos quaerat nesciunt officia facere voluptas vero animi rem neque eveniet reprehenderit fugit, beatae labore perferendis, possimus ipsum aliquid ipsam cumque dolore est distinctio odit. Quam, sunt corrupti?
+                Doloribus id eveniet cumque qui odio sed molestiae obcaecati unde nihil. Saepe, rerum! Eius expedita cum nostrum suscipit officia sequi quasi dolorem animi ratione! Blanditiis cum eligendi quo accusamus alias.
+                Reiciendis culpa, quasi fugiat quod inventore vel est nam, suscipit cupiditate adipisci aliquam nesciunt quis distinctio ducimus at, sapiente nulla? Magnam dignissimos pariatur atque temporibus vel, consequatur molestias eum est.
+                Blanditiis error quisquam voluptatibus iste, asperiores nostrum doloribus eius ex iure in cupiditate exercitationem consequatur dicta molestiae doloremque voluptate voluptatum sed saepe, cumque labore. Ducimus iure minus temporibus quam doloremque?</div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum tenetur fugiat! Qui rerum delectus laborum distinctio eveniet quasi. Veniam nobis nihil aut cupiditate, perferendis fuga sunt quidem suscipit ipsum?
+                    Ex aspernatur quos quaerat nesciunt officia facere voluptas vero animi rem neque eveniet reprehenderit fugit, beatae labore perferendis, possimus ipsum aliquid ipsam cumque dolore est distinctio odit. Quam, sunt corrupti?
+                    Doloribus id eveniet cumque qui odio sed molestiae obcaecati unde nihil. Saepe, rerum! Eius expedita cum nostrum suscipit officia sequi quasi dolorem animi ratione! Blanditiis cum eligendi quo accusamus alias.
+                    Reiciendis culpa, quasi fugiat quod inventore vel est nam, suscipit cupiditate adipisci aliquam nesciunt quis distinctio ducimus at, sapiente nulla? Magnam dignissimos pariatur atque temporibus vel, consequatur molestias eum est.
+                    Blanditiis error quisquam voluptatibus iste, asperiores nostrum doloribus eius ex iure in cupiditate exercitationem consequatur dicta molestiae doloremque voluptate voluptatum sed saepe, cumque labore. Ducimus iure minus temporibus quam doloremque?</div>
+
+    <!-- Fixed  -->
+    <div class="inquriy"><h1>Inquerey</h1></div>
+
+
+    
+    
+</body>
+</html>

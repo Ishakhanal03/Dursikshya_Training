@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform and translate </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 0;
+            height: 300px;
+            margin: 100px auto;
+            /* transform: translateX(25px); */
+            transition: all 2s 3s;
+            
+        }
+        .container img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .container:hover{
+            /* transform: translateX(25px); */
+            /* transform: translateY(-20px); */
+            transform: translate(10px, 20px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.pexels.com/photos/884788/pexels-photo-884788.jpeg" alt="">
+
+    </div>
+</body>
+</html>

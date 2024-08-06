@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+    <script>
+        //JSON-. Javascript object notation
+        const student={
+            'fname': 'Hari',
+            'lname': 'bhakta',
+            'height': 6,
+            'weight': 75,
+            'subjects': ['html','css','js','react','python']
+        }
+        //to convert object/json to string use JSON.strigify()
+        localStorage.setItem('result',JSON.stringify(student))
+
+
+        const result=JSON.parse(localStorage.getItem('result'))
+        console.log(result)
+        console.log(result.fname)
+        console.log(result.lname)
+        console.log(result.height)
+        console.log(result.weight)
+        console.log(result.subjects[0])
+        console.log(result.subjects[0][0])
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+</head>
+<body>
+    <!-- formpost ma secure hunxa get ma hunna -->
+    <!-- <form action="" method="post"></form> -->
+    <h2>Form</h2>
+    <form action="">
+       <fieldset>
+        <legend>Fill all the form</legend>
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <br>
+        <br>
+        <label for="number">Number:</label>
+        <input type="number" name="number" id="number">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <br><br>
+        <label for="description">Description:</label>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        <br><br>
+        <label>Gender:</label>
+        <input type="radio" name="gender" id="male" value="M" >male
+        <input type="radio" name="gender" id="female" value="f">female
+        <input type="radio" name="gender" id="others" value="o">Others
+
+        <br><br>
+        <label for="">Subject</label>
+        <br>
+        <input type="checkbox" name="subject" id=""><label for="">Nepali</label>
+        <br>
+        <input type="checkbox" name="subject" id=""><label for="">English</label>
+        <br>
+        <input type="checkbox" name="subject" id=""><label for="">Science</label>
+        <br>
+        <input type="checkbox" name="subject" id="" disabled><label for="">Math</label>
+        <br><br>
+
+        <label for="class">Class:</label>
+        <input type="text" name="class" id="class" value="10" readonly>
+        <br><br>
+
+        <input type="text" name="address" id="address" placeholder=" enter your address">
+
+        <br><br>
+        <input type="submit" value="subbmit">
+        <input type="reset" value="reset">
+
+       </fieldset>
+    </form>
+    
+</body>
+</html>

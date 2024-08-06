@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce</title>
+</head>
+<body>
+    <script>
+        //returns single value reducing others
+        const prices=[20,40,50,100]
+        const totalPrice=prices.reduce((total,value)=>{
+            return total+value
+            //total=0
+            //value=20
+            //total 0+20=20
+            //total=20
+            //20+40=60
+            //.......
+        },0)
+        document.write(`${totalPrice}`)
+
+        
+    </script>
+    
+</body>
+</html>

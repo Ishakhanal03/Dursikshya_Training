@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <!-- <button onclick="demo()">See the resluts</button>
+    <button ondblclick="demo2()">click</button>
+
+    <h2></h2>
+    <h3></h3> -->
+
+
+    <h1 id="myH1">Welcome</h1>
+    <label id="mytext">Usename</label>
+    <input id="myname">
+    <button id="click">submit</button>
+
+    <script>
+        // //onclick,ondblclick,onload,onkeyup,onkeydown,onmouseover,onmouseout
+
+        // const demo=()=>{
+        //     // document.write(new Date())
+        //     document.querySelector('h2').innerHTML=new Date()
+        // }
+
+        // const demo2=()=>{
+        //     document.querySelector("h3").innerHTML=new Date()
+        // 
+
+        let username;
+        document.getElementById("click").onclick = function(){
+            username = document.getElementById("myname").value
+            // console.log(username)
+        document.getElementById("myH1").textContent = `hello ${username}`
+        } 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+
+    <style>
+        .container{
+            width: 600px;
+            height: 300px;
+            margin: auto;
+            position: relative;
+        }
+
+        .container img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        button{
+            border: none;
+            font-size: 30px;
+            background: transparent;
+            color: black;
+            padding: 5px;
+            position: absolute;
+           top: 45%;
+
+        }
+        .left{
+            left: 0;
+        }
+        .right{
+            right: 0;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="images/image1.jpg" alt="">
+        <button class="left">&lt;</button>
+        <button class="right">&gt;</button>
+        
+    </div>
+    
+
+    <script src="./tu24_imageslider.js"></script>
+</body>
+</html>

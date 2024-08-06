@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Formatting</title>
+    <style>
+        .demo{
+            /* text-decoration-line: underline;
+            /* text-decoration: overline underline; 
+            text-decoration: line-through;(bitch ma katera aauxa)
+            text-decoration-color: brown;
+            text-decoration-style: dotted;
+            text-decoration-thickness: 12px; */
+            text-decoration: underline rgb(34, 255, 0);
+        }
+        a{
+            text-decoration: none;
+            color: green;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        h2{
+            /* text-transform: capitalize; */
+            /* text-transform: uppercase ; */
+            text-transform: lowercase;
+            direction: rtl;
+            unicode-bidi: bidi-override;
+
+        }
+        p{
+            width: 400px;
+            height: 400px;
+            font-size: 20px;
+            /* text-align: right; */
+            /* text-align: center; */
+            text-align: justify;
+            text-indent: 10px;
+            /* letter-spacing: 1px; */
+            /* word-spacing: 10px; */
+            line-height: 30px;
+            text-align-last: justify;
+        }
+        /* .first{
+            font-size: 25px;
+            color: red;
+        } */
+
+        .last{
+            vertical-align: middle;
+        }
+        h3{
+            font-size: 20px;
+            text-align: center;
+            font-family: cursive;
+            color: purple;
+            text-shadow:  red;
+            border: 10px black;
+            border-style: double;
+            border-radius: 10px;
+            width: 400px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: auto;
+        }
+        .circle{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>THIS IS TEXT <span class="demo">FORMATTING</span></h1>
+    <h3>Isha Khanal</h3>
+    <a href="">This is link</a>
+    <h2>Text Transform</h2>
+    <p><span class="first">L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, illum voluptatibus! Illum eius tempore omnis minus nesciunt placeat non. <span class="last">Beatae non reiciendis ratione tempora error corporis et accusamus repellendus impedit!</span></p>
+    <div class="circle"></div>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignitem</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: crimson;
+            padding: 10px;
+           display: flex;
+           /* flex-wrap: wrap-reverse; */
+           align-items: center;
+           /* align-items: baseline; */
+           /* align-items: start; */
+           /* flex-direction: row-reverse; */
+           /* flex-direction: column-reverse; */
+
+        }
+        .container .left-box{
+            width: 50%;
+            font-size: 25px;
+            
+        }
+
+        .left-box button{
+            padding: 10px 20px;
+            margin: 10px auto;
+            font-size: 20px;
+            border: none;
+            background-color: cadetblue;
+            color: white;
+            border-radius: 50px;
+            font-family: cursive;
+        }
+
+        .left-box button:hover{
+            background-image: linear-gradient(to top right, orange, blue);
+        }
+
+        .container .right-box{
+            width: 50%;
+        }
+        .nav{
+            background-color: blue;
+
+
+        }
+
+        
+
+    </style>
+</head>
+<body>
+   
+
+    <div class="container">
+        
+        <div class="left-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat dolore optio soluta assumenda pariatur facilis, vitae, perspiciatis reprehenderit repellat ab culpa veritatis laudantium consectetur. Dolorum odit soluta quia cum.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="right-box">
+            <img src="https://i.stack.imgur.com/ILTQq.png" alt="">
+
+        </div>
+    </div>
+    
+</body>
+</html>

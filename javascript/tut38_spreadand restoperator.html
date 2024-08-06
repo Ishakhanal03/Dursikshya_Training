@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread and Rest operator (......)</title>
+</head>
+<body>
+    <script>
+        //spread lai aagdi 3 dot rakhne
+        const arr1=[1,2,3,4,5]
+        const arr2=['a','b','c','d']
+        const mix=[...arr1,...arr2]
+        console.log(mix)
+
+        //rest
+
+        const showlist=(a,...subjects)=>{
+            return ['bootstrap',a,subjects]
+
+        }
+
+        const reslut=showlist('html','css','js','react')
+        document.write(`${reslut}<br>`)
+    </script>
+</body>
+</html>

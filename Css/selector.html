@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        *{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            color: blue;
+
+        }
+
+        .demo{
+            font-size: 3rem;
+        }
+        #demo1{
+          font-style: italic;
+            
+        }
+        /* group selector */
+        h1,.lorem, #lorem2{
+            font-style: italic;
+        }
+
+        /* Parent child */
+        .mark{
+            background-color: aqua;
+        }
+
+        .mark h3{
+            color: red;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        -types of selector
+        1) element selector - html tag -> h1,p, form
+        2) class selector - className -> .className -> .className
+        3) id selector - id -> # id Name
+        4) pseudo selector - p:hover
+        5) universal selector - * 
+        6) group selector - diffferent class name lai eutai design garna lai group se;ctor use garincha
+        to use angular bracket > bracket use gareko aagdi ko marta change hunca css ma  
+     -->
+
+     <h1 class="demo" id="demo1">Hello world</h1>
+     <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore rerum, molestias repellendus deleniti odio voluptatem fugiat neque? Tenetur laboriosam, minus quam magnam aperiam quod a ipsum nobis repudiandae consequuntur beatae!</p>
+     <p id="lorem2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt perferendis molestias tenetur commodi aliquid, veniam numquam. Sapiente facere quaerat corrupti, aperiam, voluptas reiciendis blanditiis numquam commodi odit veniam quae tempora!</p>
+
+     <div class="mark">
+        <h3>Kantipath, Jamal</h3>
+        <div class="mark1">
+            <h3>Kathmandu</h3>
+        </div>
+
+     </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage and session storage</title>
+</head>
+<body>
+
+    <button onclick="remove()">Remove</button>
+    <script>
+        //set item in local storage
+        localStorage.setItem("test","This is a local storage.")
+
+
+
+        const data=localStorage.getItem("test")
+        console.log(data)
+
+        const remove=()=>{
+            localStorage.removeItem("test")
+        }
+
+
+        //get item 
+    </script>
+</body>
+</html>
